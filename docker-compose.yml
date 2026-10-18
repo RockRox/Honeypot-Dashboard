@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+    env_file: .env
+    restart: unless-stopped
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    command: python parser/scheduler.py
+    volumes:
+      - ./data:/app/data
+      - ${COWRIE_LOG_PATH:-/home/cowrie/cowrie/var/log/cowrie}:/cowrie-logs:ro
+    env_file: .env
+    restart: unless-stopped
+    depends_on:
+      - api

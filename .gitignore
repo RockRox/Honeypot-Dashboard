@@ -1,0 +1,33 @@
+# Environment
+.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Parser state
+parser/.parse_cursor.json
+
+# Database (contains real attacker data — don't commit)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# Node
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
