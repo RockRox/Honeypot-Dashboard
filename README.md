@@ -164,4 +164,4 @@ VITE_API_KEY=your_random_api_key_here
 
 **Sankeerth Rajesh Nair**
 B.Tech CSE (Information Security) — VIT Vellore
-[LinkedIn](https://linkedin.com) | [GitHub](https://github.com)
+[LinkedIn](www.linkedin.com/in/sankeerth-rajesh-nair-19b392248) | [GitHub](https://github.com/RockRox)
